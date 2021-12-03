@@ -1,0 +1,193 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+      margin-top: 150px;
+    text-align: center;
+  }
+  
+  .container {
+    width: 200px;
+    height: 300px;
+    margin: 30px auto;
+    position: relative;
+  }
+  
+  .vertical {
+    background: black;
+    width: 25px;
+    height: 300px;
+    position: absolute;
+    right: 25px;
+  }
+  
+  .horizontal {
+    background: black;
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .hook {
+    width: 63px;
+    height: 50px;
+    border: solid 25px black;
+    border-bottom: none;
+    position: absolute;
+    right: 25px;
+  }
+  
+  .man {
+    width: 100px;
+    height: 175px;
+    position: absolute;
+    top: 75px;
+    left: 25px;
+  }
+  
+  .man-1 {
+    width: 40px;
+    height: 40px;
+    border: solid 10px black;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 19px;
+    display: none;
+  }
+  
+  .man-2 {
+    background: black;
+    width: 10px;
+    height: 70px;
+    position: absolute;
+    top: 57px;
+    left: 45px;
+    display: none;
+  }
+  
+  .man-3 {
+    background: black;
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    left: 21px;
+    transform: rotate(-50deg);
+    display: none;
+  }
+  
+  .man-4 {
+    background: black;
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    right: 21px;
+    transform: rotate(50deg);
+    display: none;
+  }
+  
+  .man-5 {
+    background: black;
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    bottom: -2px;
+    left: 25px;
+    transform: rotate(40deg);
+    display: none;
+  }
+  
+  .man-6 {
+    background: black;
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    bottom: -2px;
+    right: 25px;
+    transform: rotate(-40deg);
+    display: none;
+  }
+  
+  .content {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  
+  #word {
+    text-align: left;
+    font-size: 25px;
+  }
+  
+  .guess-container {
+    text-align: left;
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  
+  #guess {
+    font-size: 25px;
+    text-align: center;
+    width: 50px;
+    border: none;
+    border: solid 2px black;
+    outline: none;
+    text-transform: capitalize;
+  }
+  
+  #misses {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  .instruction {
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .navbar {
+    padding-left:40px;
+    padding-right:40px;
+  }
+  
+  .navbar a {
+    font-size: 30px; 
+    padding-left : 50px;
+    padding-right:50px;
+    padding-bottom:25px;
+    padding-top:20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    text-decoration: none;
+    border: 2px solid black;
+  }
+  .btn {
+    font-size: 30px;  
+    border: none;
+    color: white;
+    padding-left : 50px;
+    padding-right:50px;
+    padding-bottom:40px;
+    padding-top:40px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .back {
+    padding-top: 150px;
+  }
+  .navbar a:visited {
+    color:black;
+  
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+    color: rgb(255, 255, 255);
+  }
+  

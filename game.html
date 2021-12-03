@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-      
+        <div class="container">
+            <div class="hook"></div>
+            <div class="vertical"></div>
+            <div class="horizontal"></div>
+            <div class="man">
+              <div class="man-0 man-1"></div>
+              <div class="man-0 man-2"></div>
+              <div class="man-0 man-3"></div>
+              <div class="man-0 man-4"></div>
+              <div class="man-0 man-5"></div>
+              <div class="man-0 man-6"></div>
+            </div>
+          </div>
+          <div class="content">
+            <div id="word"></div>
+            <div class="guess-container">
+              GUESS: <input type="text" id="guess" maxlength="1">
+            </div>
+            <div class="instruction">
+              INSTRUCTION:<br>
+              Enter your guess at the box above.<br>
+              Press "ENTER" key to submit your answer.
+            </div>
+            <div id="misses"></div>
+          </div>
+          <div class = "back">
+            <div class = "navbar">
+              <div class = "btn">
+                  <a href="menu.html">Back</a>
+              </div>
+            </div>
+        </div>
+          <script src = "words_alpha.js"></script>
+          <script src = "scripts.js"></script>
     </body>
 </html>
