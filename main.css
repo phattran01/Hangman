@@ -2,16 +2,20 @@
   font-family: Arial, Helvetica, sans-serif;
   background-color:rgb(255, 255, 255);
 }
+
 body {
   text-align: center;
 }
+
 .header {
   font-weight: bold;
   font-size: 100px;
 }
+
 .menu {
   padding-top: 15px;
 }
+
 .navbar {
   padding-left:40px;
   padding-right:40px;
@@ -28,6 +32,7 @@ body {
   text-decoration: none;
   border: 2px solid black;
 }
+
 .btn {
   font-size: 30px;  
   border: none;
@@ -40,13 +45,16 @@ body {
   font-family: inherit;
   margin: 0;
 }
+
 .back {
   padding-top: 150px;
 }
+
 .navbar a:visited {
   color:black;
 
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: grey;
   color: rgb(255, 255, 255);
