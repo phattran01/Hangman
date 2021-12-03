@@ -11,6 +11,10 @@ body {
   font-weight: bold;
   font-size: 100px;
 }
+.header2 {
+  font-weight: bold;
+  font-size: 80px;
+}
 
 .menu {
   padding-top: 15px;
@@ -47,9 +51,14 @@ body {
 }
 
 .back {
-  padding-top: 150px;
+  padding-top: 70px;
 }
-
+.back2 {
+  padding-top: 1px;
+}
+.back3 {
+  padding-top: 20px;
+}
 .navbar a:visited {
   color:black;
 
@@ -58,5 +67,11 @@ body {
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: grey;
   color: rgb(255, 255, 255);
+}
+
+.instructions {
+  font-size: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
