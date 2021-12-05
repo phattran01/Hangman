@@ -1,9 +1,10 @@
+var pickedWord = sessionStorage.getItem("pickedWord");
+
 function myFunction() {
-    var x = document.getElementById("frm1");
-    var text = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
-      text += x.elements[i].value + "<br>";
-    }
-    document.getElementById("demo").innerHTML = text;
+  x = document.getElementById("WORD").value;
+  document.getElementById("wordChosen").innerHTML = "The word written: " + x;
+  if (typeof(Storage) !== "undefined") {
+    sessionStorage.setItem("pickedWord", x);
+  }
 }
+
