@@ -75,3 +75,32 @@ body {
   margin-right: 50px;
 }
 
+input {
+  font-size: 40px; 
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  text-decoration: none;
+  border: 2px solid black; 
+}
+
+button {
+  font-size: 30px; 
+  padding-left : 50px;
+  padding-right:50px;
+  padding-bottom:25px;
+  padding-top:20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+button:hover {
+  background-color: grey;
+  color: rgb(255, 255, 255);
+}
+
+.submitButton {
+  margin-top: 50px;
+}
+
