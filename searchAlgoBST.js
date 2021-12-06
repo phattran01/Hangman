@@ -1,6 +1,3 @@
-// Node class
-var arr = MyArray;
-
 class Node
 {
     constructor(data)
@@ -11,7 +8,6 @@ class Node
     }
 }
 
-// Binary Search tree class
 class BinarySearchTree
 {
     constructor()
@@ -32,9 +28,8 @@ class BinarySearchTree
     // preorder(node)              
     // postorder(node)
     // search(node, data)
+}
 
-// helper method which creates a new node to
-// be inserted and calls insertNode
 insert(data)
 {
     // Creating a node and initialising
@@ -86,8 +81,6 @@ insertNode(node, newNode)
     }
 }
 
-// helper method that calls the
-// removeNode with a given data
 remove(data)
 {
     // root is re-initialized with
@@ -159,7 +152,6 @@ removeNode(node, key)
  
 }
 
-// Performs inorder traversal of a tree
 inorder(node)
 {
     if(node !== null)
@@ -170,48 +162,6 @@ inorder(node)
     }
 }
 
-// Performs preorder traversal of a tree   
-preorder(node)
-{
-    if(node !== null)
-    {
-        console.log(node.data);
-        this.preorder(node.left);
-        this.preorder(node.right);
-    }
-}
-
-// Performs postorder traversal of a tree
-postorder(node)
-{
-    if(node !== null)
-    {
-        this.postorder(node.left);
-        this.postorder(node.right);
-        console.log(node.data);
-    }
-}
-
-//  finds the minimum node in tree
-// searching starts from given node
-findMinNode(node)
-{
-    // if left of a node is null
-    // then it must be minimum node
-    if(node.left === null)
-        return node;
-    else
-        return this.findMinNode(node.left);
-}
-
-// returns root of the tree
-getRootNode()
-{
-    return this.root;
-}
-
-// search for a node with given data
-// search for a node with given data
 search(node, data)
 {
    // if trees is empty return null
@@ -231,49 +181,25 @@ search(node, data)
     // if data is equal to the node data
     // return node
     else
-        return node.data;
-}
+        return node;
 }
 
-function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
-  
-    // While there remain elements to shuffle...
-    while (currentIndex != 0) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
-    }
-  
-    return array;
-  }
-
-    // create an object for the BinarySearchTree
-function pleaseDontBreak() {
+function binaryTree() {
+        // create an object for the BinarySearchTree
     var BST = new BinarySearchTree();
     
     // Inserting nodes to the BinarySearchTree
-    var arr = MyArray; // new empty array
-    var nums = [];
-    for (let i = 1; i <= arr.length; i++) {
-        nums.push(i);   
-    }
-    shuffle(nums);
-    let temp = [];
-
-    for( let j = 1; j <= nums.length; j++) {
-        temp.push(MyArray[nums[j]]);
-    }
-
-    document.getElementById("fuck").innerHTML = String(temp.length);
-    document.getElementById("fuck2").innerHTML = temp;
-}
-    /***                        
+    BST.insert(15);
+    BST.insert(25);
+    BST.insert(10);
+    BST.insert(7);
+    BST.insert(22);
+    BST.insert(17);
+    BST.insert(13);
+    BST.insert(5);
+    BST.insert(9);
+    BST.insert(27);
+                            
     //          15
     //         /  \
     //        10   25
@@ -288,6 +214,7 @@ function pleaseDontBreak() {
     BST.inorder(root);
                 
     // Removing node with no children
+    BST.remove(5);
                 
                 
     //          15
@@ -305,6 +232,7 @@ function pleaseDontBreak() {
     BST.inorder(root);
                 
     // Removing node with one child
+    BST.remove(7);
                 
     //          15
     //         /  \
@@ -321,6 +249,7 @@ function pleaseDontBreak() {
     BST.inorder(root);
                 
     // Removing node with two children
+    BST.remove(15);
         
     //          17
     //         /  \
@@ -338,9 +267,4 @@ function pleaseDontBreak() {
     BST.postorder(root);
     console.log("preorder traversal");
     BST.preorder(root);
-
-    console.log(BST.search(root, "ah"));
-    */
-    
-
-
+}
