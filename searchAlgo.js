@@ -71,13 +71,17 @@ function autoCorrect() {
 }
 
 function bruteForce() {
+    var startTime = performance.now();
     word1 = String(pickedWord)
     document.getElementById("bruteForceAlgo").innerHTML = "Brute Force: " + MyArray.includes(pickedWord);
     var auto = autoCorrect();
     document.getElementById('autoCorrect1').innerHTML = 'Autocorrect: ' + auto;
+    var endTime = performance.now();
+    console.log(`Calling bruteForce took ${endTime - startTime} milliseconds`);
 }
 
 function decreaseConstantFactor() {
+    var startTime = performance.now();
     var arr = MyArray;
     var temp = [];
 
@@ -96,6 +100,8 @@ function decreaseConstantFactor() {
 
     var auto = autoCorrect();
     document.getElementById('autoCorrect2').innerHTML = 'Autocorrect: ' + auto;
+    var endTime = performance.now();
+    console.log(`Calling Decrease By Constant Factor took ${endTime - startTime} milliseconds`);
 
 }
 
@@ -353,6 +359,7 @@ function shuffle(array) {
 
 // create an object for the BinarySearchTree
 function transformConquer() {
+    var startTime = performance.now();
     var arr = MyArray;
     var x = String(pickedWord);
     var BST = new BinarySearchTree();
@@ -379,4 +386,6 @@ function transformConquer() {
 
     var auto = autoCorrect();
     document.getElementById('autoCorrect3').innerHTML = 'Autocorrect: ' + auto;
+    var endTime = performance.now();
+    console.log(`Calling Transform and Conquer took ${endTime - startTime} milliseconds`);
 }
