@@ -79,9 +79,14 @@ function bruteForce() {
 
 function decreaseConstantFactor() {
     var arr = MyArray;
+    var temp = [];
+
+    for( let i = 1; i <= arr.length; i++) {
+        temp.push(arr[i]);
+    }
     var x = String(pickedWord);
 
-    let result = binarySearch(arr, x);
+    let result = binarySearch(temp, x);
 
     if (result == -1) {
         document.getElementById("decreaseByConstantFactorAlgo").innerHTML = "Decrease By Constant Factor: false";
